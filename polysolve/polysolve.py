@@ -3,7 +3,11 @@ import numpy as np
 CBRT_UNITY_IM = np.sqrt(3)/2 * 1j
 
 
-def quadratic(a, b, c):
+def quadratic(
+    a:  float , 
+    b:  float , 
+    c:  float,
+) -> tuple[float , float]:
     det = b**2 - (4*a*c)
 
     return ((-b + np.sqrt(det)) / (2*a),
